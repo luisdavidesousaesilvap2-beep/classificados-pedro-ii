@@ -10,8 +10,8 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
       color: #1f2937;
+      text-align: center;
     }
 
     .menu {
@@ -34,7 +34,9 @@
     }
 
     .conteudo {
-      padding: 80px 20px;
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: auto;
     }
 
     h1 {
@@ -46,6 +48,62 @@
     p {
       font-size: 18px;
       line-height: 1.6;
+    }
+
+    .form-contato {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .form-contato input,
+    .form-contato textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+      resize: none;
+    }
+
+    .form-contato textarea {
+      height: 120px;
+    }
+
+    .form-contato button {
+      background-color: #10b981;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-contato button:hover {
+      background-color: #059669;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: white;
+      padding: 18px 22px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+      transform: scale(1.1);
     }
 
     .rodape {
@@ -69,10 +127,20 @@
 
   <div class="conteudo">
     <h1>Contato</h1>
-    <p>Entre em contato conosco pelo WhatsApp ou e-mail:</p>
+    <p>Entre em contato conosco pelo WhatsApp ou preencha o formulário abaixo:</p>
     <p>📱 WhatsApp: (86) 99432-3461</p>
     <p>✉️ E-mail: luisdavidesousaesilvap2@gmail.com</p>
+
+    <!-- FORMULÁRIO FUNCIONAL -->
+    <form class="form-contato" action="https://formspree.io/f/mqkzelgn" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
+
+  <a class="whatsapp" href="https://wa.me/5586994323461" target="_blank">💬</a>
 
   <footer class="rodape">
     © 2026 – Classificados Gratuitos de Pedro II
