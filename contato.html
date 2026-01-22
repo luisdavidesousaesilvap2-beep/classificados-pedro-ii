@@ -3,68 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato – Classificados Pedro II</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #f0fdf4;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      text-align: center;
+      color: #1f2937;
     }
 
-    /* MENU */
     .menu {
       background-color: #064e3b;
       padding: 15px;
-      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .menu a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
     }
 
     .menu a:hover {
-      text-decoration: underline;
+      color: #10b981;
     }
 
-    /* CONTEÚDO */
     .conteudo {
-      padding: 20px;
+      padding: 80px 20px;
     }
 
-    /* RODAPÉ */
+    h1 {
+      color: #064e3b;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     .rodape {
       margin-top: 60px;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
       background-color: #064e3b;
       color: white;
       font-size: 14px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     }
   </style>
 </head>
-
 <body>
 
-  <!-- MENU -->
   <nav class="menu">
-    <a href="index.html">Início</a>
-    <a href="anunciar.html">Anunciar</a>
-    <a href="contato.html">Contato</a>
+    <a href="./index.html">Início</a>
+    <a href="./anunciar.html">Anunciar</a>
+    <a href="./contato.html">Contato</a>
   </nav>
 
-  <!-- CONTEÚDO -->
   <div class="conteudo">
     <h1>Contato</h1>
-    <p>Entre em contato conosco pelo WhatsApp:</p>
+    <p>Entre em contato conosco pelo WhatsApp ou e-mail:</p>
     <p>📱 WhatsApp: (86) 99432-3461</p>
-    <p>Ou envie um e-mail: contato@classificadospedroii.com.br</p>
+    <p>✉️ E-mail: contato@classificadospedroii.com.br</p>
   </div>
 
-  <!-- RODAPÉ -->
   <footer class="rodape">
     © 2026 – Classificados Gratuitos de Pedro II
   </footer>
