@@ -9,9 +9,33 @@
       background-color: #f0fdf4; /* verde clarinho */
       font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    /* MENU */
+    .menu {
+      background-color: #064e3b;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTEÚDO */
+    .conteudo {
       padding: 20px;
     }
 
+    /* BOTÃO WHATSAPP */
     .whatsapp {
       position: fixed;
       bottom: 20px;
@@ -29,6 +53,7 @@
       background: #1ebe5d;
     }
 
+    /* RODAPÉ */
     .rodape {
       margin-top: 60px;
       padding: 20px;
@@ -42,8 +67,18 @@
 
 <body>
 
-  <h1>Classificados Gratuitos de Pedro II</h1>
-  <p>Meu primeiro site</p>
+  <!-- MENU -->
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Anunciar</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <div class="conteudo">
+    <h1>Classificados Gratuitos de Pedro II</h1>
+    <p>Meu primeiro site</p>
+  </div>
 
   <!-- BOTÃO WHATSAPP -->
   <a class="whatsapp"
