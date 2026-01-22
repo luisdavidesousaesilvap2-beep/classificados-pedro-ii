@@ -3,94 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <title>Classificados Pedro II</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #f0fdf4;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      color: #1f2937;
+      text-align: center;
     }
 
-    /* MENU */
     .menu {
       background-color: #064e3b;
       padding: 15px;
-      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .menu a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
     }
 
     .menu a:hover {
-      text-decoration: underline;
+      color: #10b981;
     }
 
-    /* CONTEÚDO */
     .conteudo {
-      padding: 20px;
+      padding: 80px 20px;
     }
 
-    /* BOTÃO WHATSAPP */
+    h1 {
+      color: #064e3b;
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
     .whatsapp {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 25px;
+      right: 25px;
       background: #25d366;
       color: white;
-      padding: 15px 18px;
+      padding: 18px 22px;
       border-radius: 50%;
-      font-size: 20px;
+      font-size: 24px;
       text-decoration: none;
       z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.2s;
     }
 
     .whatsapp:hover {
       background: #1ebe5d;
+      transform: scale(1.1);
     }
 
-    /* RODAPÉ */
     .rodape {
       margin-top: 60px;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
       background-color: #064e3b;
       color: white;
       font-size: 14px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     }
   </style>
 </head>
-
 <body>
 
-  <!-- MENU -->
   <nav class="menu">
-    <a href="index.html">Início</a>
-    <a href="anunciar.html">Anunciar</a>
-    <a href="contato.html">Contato</a>
+    <a href="./index.html">Início</a>
+    <a href="./anunciar.html">Anunciar</a>
+    <a href="./contato.html">Contato</a>
   </nav>
 
-  <!-- CONTEÚDO -->
   <div class="conteudo">
     <h1>Classificados Gratuitos de Pedro II</h1>
-    <p>Meu primeiro site</p>
+    <p>Bem-vindo ao site oficial de classificados da cidade de Pedro II!  
+    Aqui você pode anunciar produtos, serviços e entrar em contato facilmente.</p>
   </div>
 
-  <!-- BOTÃO WHATSAPP -->
-  <a class="whatsapp"
-     href="https://wa.me/5586994323461"
-     target="_blank">
-    💬
-  </a>
+  <a class="whatsapp" href="https://wa.me/5586994323461" target="_blank">💬</a>
 
-  <!-- RODAPÉ -->
   <footer class="rodape">
-    © 2026 – Classificados Gratuitos de Pedro II  
-    <br>
+    © 2026 – Classificados Gratuitos de Pedro II<br>
     Contato: WhatsApp
   </footer>
 
