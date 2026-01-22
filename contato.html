@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Contato – Classificados Pedro II</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #f0fdf4;
@@ -14,10 +15,10 @@
       text-align: center;
     }
 
+    /* MENU */
     .menu {
       background-color: #064e3b;
       padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .menu a {
@@ -25,14 +26,13 @@
       margin: 0 20px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 16px;
-      transition: color 0.3s;
     }
 
     .menu a:hover {
       color: #10b981;
     }
 
+    /* CONTEÚDO */
     .conteudo {
       padding: 60px 20px;
       max-width: 600px;
@@ -41,51 +41,49 @@
 
     h1 {
       color: #064e3b;
-      font-size: 36px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.6;
     }
 
+    /* FORMULÁRIO */
     .form-contato {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     .form-contato input,
     .form-contato textarea {
       padding: 12px;
-      border: 1px solid #ccc;
       border-radius: 8px;
+      border: 1px solid #ccc;
       font-size: 16px;
-      width: 100%;
-      resize: none;
     }
 
     .form-contato textarea {
       height: 120px;
+      resize: none;
     }
 
     .form-contato button {
       background-color: #10b981;
       color: white;
       padding: 12px;
-      font-size: 16px;
       border: none;
       border-radius: 8px;
+      font-size: 16px;
       cursor: pointer;
-      transition: background 0.3s;
     }
 
     .form-contato button:hover {
       background-color: #059669;
     }
 
+    /* WHATSAPP */
     .whatsapp {
       position: fixed;
       bottom: 25px;
@@ -96,43 +94,37 @@
       border-radius: 50%;
       font-size: 24px;
       text-decoration: none;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s, background 0.2s;
     }
 
-    .whatsapp:hover {
-      background: #1ebe5d;
-      transform: scale(1.1);
-    }
-
+    /* RODAPÉ */
     .rodape {
       margin-top: 60px;
-      padding: 25px;
-      text-align: center;
+      padding: 20px;
       background-color: #064e3b;
       color: white;
       font-size: 14px;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     }
   </style>
 </head>
+
 <body>
 
+  <!-- MENU -->
   <nav class="menu">
     <a href="./index.html">Início</a>
     <a href="./anunciar.html">Anunciar</a>
     <a href="./contato.html">Contato</a>
   </nav>
 
+  <!-- CONTEÚDO -->
   <div class="conteudo">
     <h1>Contato</h1>
-    <p>Entre em contato conosco pelo WhatsApp ou preencha o formulário abaixo:</p>
+    <p>Fale conosco pelo WhatsApp ou envie uma mensagem:</p>
     <p>📱 WhatsApp: (86) 99432-3461</p>
     <p>✉️ E-mail: luisdavidesousaesilvap2@gmail.com</p>
 
     <!-- FORMULÁRIO FUNCIONAL -->
-    <form class="form-contato" action="https://formspree.io/f/mqkzelgn" method="POST">
+    <form class="form-contato" action="https://formspree.io/f/mgoavjdr" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu e-mail" required>
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
@@ -140,8 +132,10 @@
     </form>
   </div>
 
+  <!-- BOTÃO WHATSAPP -->
   <a class="whatsapp" href="https://wa.me/5586994323461" target="_blank">💬</a>
 
+  <!-- RODAPÉ -->
   <footer class="rodape">
     © 2026 – Classificados Gratuitos de Pedro II
   </footer>
