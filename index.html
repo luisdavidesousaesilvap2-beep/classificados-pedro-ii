@@ -23,8 +23,6 @@ body {
   background: #064e3b;
   padding: 15px;
   text-align: center;
-  position: relative;
-  z-index: 9999; /* ISSO RESOLVE O BUG */
 }
 
 .menu a {
@@ -36,6 +34,23 @@ body {
 
 .menu a:hover {
   color: #34d399;
+}
+
+/* BOTÃO ANUNCIAR */
+.botao-anunciar {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botao-anunciar:hover {
+  background: #059669;
+  transform: scale(1.05);
 }
 
 /* CONTAINER */
@@ -55,12 +70,6 @@ body {
 
 .titulo h2 {
   margin: 0;
-}
-
-.titulo a {
-  text-decoration: none;
-  color: #064e3b;
-  font-weight: 600;
 }
 
 /* GRID */
@@ -128,16 +137,23 @@ body {
   <a href="./contato.html">Contato</a>
 </div>
 
+<!-- BOTÃO ANUNCIAR -->
+<div style="text-align:center; margin: 30px 0;">
+  <a href="./anunciar.html" class="botao-anunciar">
+    ➕ Anunciar Grátis
+  </a>
+</div>
+
 <!-- CONTEÚDO -->
 <div class="container">
 
   <div class="titulo">
     <h2>Anúncios Recentes</h2>
-    <a href="./anunciar.html">Ver todos →</a>
   </div>
 
   <div class="grid">
 
+    <!-- CARD 1 -->
     <div class="card">
       <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="">
       <div class="card-content">
@@ -151,6 +167,7 @@ body {
       </div>
     </div>
 
+    <!-- CARD 2 -->
     <div class="card">
       <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="">
       <div class="card-content">
@@ -164,6 +181,7 @@ body {
       </div>
     </div>
 
+    <!-- CARD 3 -->
     <div class="card">
       <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66" alt="">
       <div class="card-content">
